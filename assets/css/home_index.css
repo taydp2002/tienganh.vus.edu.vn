@@ -1,0 +1,167 @@
+
+/*! RESET STYLE */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+video{ width: 100%;height: auto; max-width: 100%; }
+.wp-video{width: 100% !important;}
+body {
+  width: 100%;
+  
+}
+.form-field._checkbox_field.show_if_simple{
+display: block  !important;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus{
+  outline: none !important;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+span {
+  margin: 0 !important;
+}
+/* end  */
+
+/* header trang home */
+
+/* reuse */
+html{
+    scroll-behavior: smooth;
+}
+.middle_content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.clear_space_25{
+    clear: both;
+    font-size: 0;
+    height: 25px !important;
+}
+.clear_space_10{
+    clear: both;
+    font-size: 0;
+    height: 10px !important;
+}
+
+
+
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 16px;
+}
+.home_header_wrapper{
+    box-shadow: 6.15401px 0 17.4363px rgba(0, 0, 0, .05) !important;
+    background-color: white;
+}
+.home_header_wrapper,.home_header_nav{
+    height: 64px;
+    
+}
+.home_header_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.home_header_logo{
+    padding: 10px 0;
+}
+.home_header_logo img{
+    width: 73%;
+    max-height: 100%;
+}
+
+/* header contact  */
+.home_header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_header_nav li{
+    padding: 0 15px;
+}
+.home_link,.home_tel{
+    color: #b01a20 !important;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 64px;
+}
+
+/* ===========End header============ */
+
+/* ===== main ====================== */
+.home_banner_ads{
+
+}
+.home_banner_ads_wrapper img{
+    width: 100%;
+}
+
+
+/* ============= banner 2================ */
+.home_banner_2{
+    background:#eaf2fe
+}
+.home_banner_2_inner_title{
+    color: #222f6e !important;
+    font-weight: 900 !important;
+    font-size: 32px;
+    line-height: 48px !important;
+    text-align: center;
+}
+
+.home_banner_2_reason{
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.home_banner_2_reason_item{
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+}
