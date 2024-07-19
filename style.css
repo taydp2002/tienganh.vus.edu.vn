@@ -113,6 +113,8 @@ span {
   --color-background-35: linear-gradient(0deg, rgba(72,177,255,1) 0%, rgba(196,227,247,1) 100%);
   --color-background-36:#dcaaaa;
   --color-background-37:#ffeeee;
+  --color-background-38:#222f6e;
+  --color-background-39: #ffd805;
 
   /* List color text */
   --color-text-0: #000000;
