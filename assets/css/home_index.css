@@ -116,7 +116,9 @@ header {
 .home_header_nav {
   height: 64px;
 }
-
+.home_header_nav a:hover{
+  background-color: #cfcfcf;
+}
 .home_header_container {
   display: flex;
   justify-content: space-between;
@@ -973,4 +975,18 @@ align-items: center;
 .home__banner--footer__desc{
   color: white;
   font-size: 1.1rem;
+}
+/* final form */
+.home__signupForm2{
+  background: #faf0f1;
+}
+.home__signupForm2 .home__banner--signupForm__inner--title{
+   color:#b01a20;
+}
+
+.home__signupForm2  .home__banner--signupForm__inner--note{
+color: #374151;
+font-size: 1.1rem ;
+line-height: 24px;
+font-weight: inherit;
 }
