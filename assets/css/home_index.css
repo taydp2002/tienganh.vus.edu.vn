@@ -106,6 +106,12 @@ header {
   z-index: 2;
   font-size: 16px;
 }
+
+img{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 .layer__sidenav--overlay{
   position: fixed;
   top: 0;
@@ -271,6 +277,17 @@ header {
   display: flex;
   max-width: 1200px;
   margin: 0 auto 5px auto;
+}
+
+
+
+.home__person--bot{
+  margin-top: 77px;
+}
+.home__person--bot,
+.home__person--top{
+  transition: ease-in-out 0.4s;
+  opacity: 0;
 }
 
 .home__banner--person__customers--top__wrap {
@@ -851,6 +868,8 @@ header {
   overflow: hidden;
   width: min-content;
   display: flex;
+    transition: transform 0.2s ease-in-out; /* Adjusted transition duration */
+ 
 }
 
 .home__banner--students__bottom--slide__item {
@@ -859,6 +878,10 @@ header {
   padding: 10px;
   border-radius: 10px;
   background-color: white;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .home__banner--students__bottom--slide__image {
@@ -868,6 +891,7 @@ header {
 .home__banner--students__bottom--slide__image img {
   width: 100%;
   border-radius: 10px;
+  
 }
 
 .home__banner--students__bottom--slide__content {
