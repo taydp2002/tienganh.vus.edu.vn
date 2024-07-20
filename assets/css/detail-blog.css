@@ -267,6 +267,9 @@ header{
   .detail__blog--main__img img, .detail__blog--main__img {
     max-height: 300px;
   }
+  .detail__blog--main__title{
+    padding: 0;
+  }
 }
 
 
