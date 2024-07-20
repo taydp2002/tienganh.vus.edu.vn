@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VUS Anh Văn Hội Việt Mỹ</title>
     <link rel="stylesheet" href="../assets/css/home_index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
     <header class="home_header_wrapper">
         <div class="home_header_container">
+            <span class="home__menubar">
+                <ion-icon name="menu-outline"></ion-icon>
+            </span>
             <div class="home_header_logo">
                 <img src="../assets/images/home_logo.svg" alt="">
             </div>
+          
             <ul class="home_header_nav">
                 <a href="#" title="SUPER SUMMER 2024!">
                     <li class="home_header_nav_link">
@@ -399,9 +405,11 @@
                         </div>
                     </div>
                     <div class="home__banner--signupForm__button">
-                        <button>
-                            Đăng ký
-                        </button>
+                        <a href="#">
+                            <button>
+                                Đăng ký
+                            </button>
+                        </a>
                     </div>
                     <div class="home__banner--signupForm__desc">
                         <p>
@@ -725,40 +733,88 @@
                 </div>
                 <div class="home__banner--students__bottom">
                     <div class="home__banner--students__bottom--slide__wrap">
-                        <div class="home__banner--students__bottom--slide">
-                            <div class="home__banner--students__bottom--slide__item">
-                                <div class="home__banner--students__bottom--slide__image">
-                                    <img src="../assets/images/home_30.png" alt="Hình ảnh Học viên VUS" srcset="">
+                        <div class="home__banner--slide__box">
+                            <div class="home__banner--students__bottom--slide">
+                                <div class="home__banner--students__bottom--slide__item">
+                                    <div class="home__banner--students__bottom--slide__image">
+                                        <img src="../assets/images/home_30.png" alt="Hình ảnh Học viên VUS" srcset="">
+                                    </div>
+                                    <div class="home__banner--students__bottom--slide__content">
+                                        <h6>
+                                            PHẠM VIỆT THỤC ĐOAN
+                                        </h6>
+                                        <p>
+                                            IELTS: 8.5
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="home__banner--students__bottom--slide__content">
-                                    <h6>
-                                        PHẠM VIỆT THỤC ĐOAN
-                                    </h6>
-                                    <p>
-                                        IELTS: 8.5
-                                    </p>
+    
+                                <div class="home__banner--students__bottom--slide__item">
+                                    <div class="home__banner--students__bottom--slide__image">
+                                        <img src="../assets/images/home_30.png" alt="Hình ảnh Học viên VUS" srcset="">
+                                    </div>
+                                    <div class="home__banner--students__bottom--slide__content">
+                                        <h6>
+                                            PHẠM VIỆT THỤC ĐOAN
+                                        </h6>
+                                        <p>
+                                            IELTS: 8.5
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="home__banner--students__bottom--slide__item">
+                                    <div class="home__banner--students__bottom--slide__image">
+                                        <img src="../assets/images/home_30.png" alt="Hình ảnh Học viên VUS" srcset="">
+                                    </div>
+                                    <div class="home__banner--students__bottom--slide__content">
+                                        <h6>
+                                            PHẠM VIỆT THỤC ĐOAN
+                                        </h6>
+                                        <p>
+                                            IELTS: 8.5
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="home__banner--students__bottom--slide__item">
+                                    <div class="home__banner--students__bottom--slide__image">
+                                        <img src="../assets/images/home_30.png" alt="Hình ảnh Học viên VUS" srcset="">
+                                    </div>
+                                    <div class="home__banner--students__bottom--slide__content">
+                                        <h6>
+                                            PHẠM VIỆT THỤC ĐOAN
+                                        </h6>
+                                        <p>
+                                            IELTS: 8.5
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="home__banner--students__bottom--slide__item">
+                                    <div class="home__banner--students__bottom--slide__image">
+                                        <img src="../assets/images/home_30.png" alt="Hình ảnh Học viên VUS" srcset="">
+                                    </div>
+                                    <div class="home__banner--students__bottom--slide__content">
+                                        <h6>
+                                            PHẠM VIỆT THỤC ĐOAN
+                                        </h6>
+                                        <p>
+                                            IELTS: 8.5
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                      
                     </div>
 
 
                     <div class="home__banner--bottom__dots">
-                        <button class="home__banner--dots__btn">
-                            <span class="home__button--dots">
-
-                            </span>
-                        </button>
-                        <button class="home__banner--dots__btn">
-                            <span class="home__button--dots active">
-
-                            </span>
-                        </button>
-                        <button class="home__banner--dots__btn">
-                            <span class="home__button--dots">
-
-                            </span>
-                        </button>
+                        <button class="home__banner--dots__btn" data-slide="0"><span class="home__button--dots"></span></button>
+                        <button class="home__banner--dots__btn" data-slide="1"><span class="home__button--dots active"></span></button>
+                        <button class="home__banner--dots__btn" data-slide="2"><span class="home__button--dots"></span></button>
+                        <!-- Repeat for other dots... -->
                     </div>
                 </div>
             </div>
@@ -965,9 +1021,11 @@
                         </div>
                     </div>
                     <div class="home__banner--signupForm__button">
-                        <button>
-                            Đăng ký
-                        </button>
+                        <a href="#">
+                            <button>
+                                Đăng ký
+                            </button>
+                        </a>
                     </div>
                     <div class="home__banner--signupForm__desc">
                         <p>
@@ -995,6 +1053,10 @@
             </div>
         </section>
     </main>
+    <div class="layer__sidenav--overlay" style="display: none; opacity: 0;">
+
+    </div>
+    
 </body>
 
 </html>

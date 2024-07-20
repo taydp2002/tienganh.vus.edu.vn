@@ -106,7 +106,21 @@ header {
   z-index: 2;
   font-size: 16px;
 }
+.layer__sidenav--overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 997;
+  display: none;
+}
 
+.home__menubar{
+  display: none;
+}
 .home_header_wrapper {
   box-shadow: 6.15401px 0 17.4363px rgba(0, 0, 0, 0.05) !important;
   background-color: white;
@@ -114,8 +128,10 @@ header {
 
 .home_header_wrapper,
 .home_header_nav {
+  width: 100%;
   height: 64px;
 }
+
 .home_header_nav a:hover{
   background-color: #cfcfcf;
 }
@@ -138,7 +154,7 @@ header {
 .home_header_nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .home_header_nav li {
@@ -580,15 +596,18 @@ header {
 }
 
 .home__banner--inf__achie {
+  width: 100%;
   margin-top: 20px;
+  gap: 20px;
   display: flex;
-  width: 945px;
+  max-width: 945px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .home__banner--inf__achie:nth-child(2) {
-  width: 1175px !important;
+  width: 100%;
+  max-width: 1175px !important;
 }
 
 .home__banner--inf__achie--item {
@@ -713,7 +732,9 @@ header {
   padding-bottom: 25px;
 }
 
-.home__banner--acts__bottom--wrap {
+.home__banner--acts__bottom--wrap,
+.home__banner--students__bottom--slide__wrap,
+.home__banner--rating__bottom {
   box-sizing: border-box;
   padding: 0 .75rem;
   z-index: 2;
@@ -820,9 +841,17 @@ header {
   padding-bottom: 50px;
 }
 
-.home__banner--students__bottom--slide__wrap {}
+.home__banner--slide__box{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
 
-.home__banner--students__bottom--slide {}
+.home__banner--students__bottom--slide {
+  overflow: hidden;
+  width: min-content;
+  display: flex;
+}
 
 .home__banner--students__bottom--slide__item {
   width: 299px;
@@ -931,6 +960,7 @@ header {
 .home__banner--rating__slider{
   overflow: hidden;
   max-width: 1256px;
+  width: 100%;
 }
 .home__banner--rating__slider--list{
     display: flex;
@@ -989,4 +1019,205 @@ color: #374151;
 font-size: 1.1rem ;
 line-height: 24px;
 font-weight: inherit;
+}
+
+@media only screen and (max-width: 992px) 
+{
+
+  .home__banner--benefit__box--item p{
+    font-size: 1rem
+  }
+  .home_header_container{
+    position: relative;
+    padding: 0;
+  }
+  .home__menubar{
+    height: 64px;
+    line-height: 64px;
+    padding: 0 16px;
+    font-size: 2.5rem;
+  }
+  .home__menubar ion-icon{
+    padding: 12px 0;
+  }
+  .home_header_nav{
+    position: absolute;
+    left: -80%;
+    width: 80%;
+    max-width: 375px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    z-index: 998;
+  }
+  .home_header_logo{
+    margin: 0 auto;
+  }
+  .home_header_nav_link .home_link{
+    color: #222f6e !important;
+  }
+
+  .home_header_nav_tel .home_tel{}
+  .home__menubar{
+    display: inline-block;
+  }
+  .home_link,.home_tel{
+   
+  }
+  .home_header_nav a{
+    width: 100%;
+    border-bottom: 1px solid lavender;
+  }
+  .home__banner--benefit__box--item{
+    height: 165px;
+  }
+
+  .home__banner--course__bottom--item__wrap{
+    flex-basis:50%;
+  }
+  .home__banner--course__bottom{
+    padding: 0 .75rem;
+    max-width: none;
+    width:100%;
+  }
+  
+  .home__banner--purpose__reason{
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .home__banner--person__customers_middle{
+    display: none;
+  }
+  .home__banner--person__customers--top{
+    justify-content: space-around;
+  }
+  .home__banner--person__customers--top .home__banner--person__customers--top__item:nth-of-type(2){
+    display: none;
+  }
+  .home__banner--person__customers--top__wrap{
+    width: 47%;
+  }
+  .home__banner--person__customers--top__item{
+    max-width: none;
+  }
+  .home__banner--person__customers_bottom
+  .home__banner--person__customers--top__item{
+    width: 97%;
+  }
+  .home__banner--inf_logo{
+    display: none;
+  }
+  .home__banner--inf__bottom{
+    padding: 0 .75rem;
+    max-width: none;
+    width:100%;
+  }
+  .home__banner--inf__last{
+    width: 100%;
+    background-color: white;
+ 
+  }
+  .home__banner--inf__last p{
+    color: #222f6e;
+  }
+  .home__banner--benefit__blue{
+    background-color: white;
+    color: #222f6e;
+  }
+  .home__banner--benefit__box{
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px
+  }
+  .home__banner--benefit__box--item{
+    height: fit-content;
+  }
+ .home__banner--benefit__box--item__wrap
+  {
+    padding: 0 .75rem;
+    max-width: none;
+    width: 100%;
+  }
+  .home__banner--benefit__box{
+    padding: 0;
+  }
+  .home__banner--rating__slide--item,
+  .home__banner--students__bottom--slide__item,
+  .home__banner--acts__bottom--slide__item{
+    width: calc((100vw / 2) - 22px);
+  }
+}
+
+@media only screen and (max-width: 642px) 
+{
+  
+  .home__banner--person__customers--wrapper,
+  .home__banner--purpose__reason{
+    padding-bottom: 25px;
+  }
+  .clear_space_25{
+    display: none;
+  }
+  .home__banner--person__customers--top,
+  .home__banner--inf__achie
+  {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px
+  }
+
+  .home__banner--person__customers--top__wrap,
+  .home__banner--course__top,
+  .home__banner--inf__achie,
+  .home__banner--acts__top,
+  .home__banner--personnel__bottom--left{
+    padding: 0 .75rem;
+    max-width: none;
+    width: 100%;
+  }
+  .home__banner--course__inner--title,
+  .home__banner--signupForm__inner--title,
+  .home__banner--inf__inner_title,
+  .home__banner--benefit__inner--title,
+  .home__banner--acts__inner--title,
+  .home__banner--students__inner--title,
+  .home__banner--rating__title,
+  .home__banner--person__inner--title,
+  .home__banner--purpose__inner--title,
+  .home__banner--personnel__inner--title
+  
+  {
+    line-height: 35px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    
+  }
+  .home__banner--course__bottom{
+    flex-direction: column;
+  }
+  .home__banner--inf__achie--item{
+    width: 100%;
+  }
+
+  .home__banner--acts__inner{
+    padding: 0;
+  }
+  
+  .home__banner--acts__top--content{
+    margin-top: 10px;
+  }
+  .home__banner--acts__bottom--slide__item,
+  .home__banner--students__bottom--slide__item,
+  .home__banner--rating__slide--items{
+    width: calc(100vw - 20px);
+  }
+  .home__banner--personnel__top,
+  .home__banner--rating__inner
+  {
+    padding:0;
+    padding-top: 2px;
+  }
 }
