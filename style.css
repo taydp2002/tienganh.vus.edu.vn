@@ -13,6 +13,8 @@
  */
 
 /*! RESET STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -22,24 +24,21 @@
 }
 
 body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  height: 100%;
   width: 100%;
-  
 }
 .form-field._checkbox_field.show_if_simple{
 display: block  !important;
 }
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  color: black;
-  scroll-behavior: smooth;
-}
+
 
 a {
   -webkit-tap-highlight-color: transparent;
   text-decoration: none !important;
-  color: #131313 !important;
+  color: #131313 ;
 }
 
 a:hover {
@@ -112,7 +111,10 @@ span {
   --color-background-33: #253d97;
   --color-background-34: #4baaff;
   --color-background-35: linear-gradient(0deg, rgba(72,177,255,1) 0%, rgba(196,227,247,1) 100%);
-  --color-background-35:#dcaaaa;
+  --color-background-36:#dcaaaa;
+  --color-background-37:#ffeeee;
+  --color-background-38:#222f6e;
+  --color-background-39: #ffd805;
 
   /* List color text */
   --color-text-0: #000000;
