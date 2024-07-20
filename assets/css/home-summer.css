@@ -32,38 +32,6 @@ header{
     border-radius: 50px;
     border: 1px solid var(--color-background-6);
   }
-  
-
-.head__logo{
-    width: 220px;
-    padding: 10px 0 7px 0;
-
-}
-.head__navbar{
-    display: flex;
-}
-.head__navbar a{
-    color: var(--color-background-28) !important;
-    text-transform: uppercase;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.head__navbar a:nth-child(2) span{
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-.head__navbar a:nth-child(1) span{
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-.head__navbar a ion-icon{
-    margin-right: 10px;
-    font-size: 1.5rem;
-}
-
 
 .home__summer--relative{
     margin-top: 64px;
@@ -143,6 +111,9 @@ header{
     justify-content: space-between;
     width: 100%;
     margin: 50px 0 25px 0;
+}
+.home__summer--discover .home__summer--discover__container .home__summer--discover__box--content{
+    flex-wrap: wrap;
 }
 .home__summer--discover .home__summer--discover__container .home__summer--discover__box--content__item:nth-child(1){
     width: 46%;
@@ -588,6 +559,7 @@ header{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 .home__summer--method__item img{
     width: 200px;
@@ -755,7 +727,8 @@ header{
     margin-top: 100px;
 }
 .home__summer--digi__header--item:nth-child(1) img:nth-child(1){
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 .home__summer--digi__header--item:nth-child(1) img:nth-child(2){
     position: absolute;
@@ -769,7 +742,8 @@ header{
     display: flex;
 }
 .home__summer--digi__header--item:nth-child(2) img{
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
 }
 .home__summer--digi__header--item:nth-child(2) p{
     position: absolute;
@@ -794,6 +768,9 @@ header{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+}
+.home__summer--digi__content:nth-child(1){
+    gap: 10px;
 }
 .home__summer--digi__content:nth-child(2),
 .home__summer--digi__content:nth-child(1){
@@ -861,5 +838,175 @@ header{
     width: 70%;
 }
 .home__summer--digi__content:nth-child(2){
-    ma
+  padding: 50px;
+  flex-wrap: wrap;
+}
+.home__summer--digi__content:nth-child(3){
+    max-width: 992px;
+    margin: 0 auto;
+    width: 100%;
+}
+.home__summer--digi__content:nth-child(3) img{
+    width: 100%;
+}
+.home__summer--prize__start img:nth-child(1){
+    display: none;
+}
+@media (max-width: 500px) {
+    .home__summer--menu .home__summer--menu__container .home__summer--menu__box--content a{
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    .home__summer--camping__content:nth-child(2) .home__summer--camping__content--item:nth-child(2) p:nth-child(2),
+    .home__summer--camping__content:nth-child(1) .home__summer--camping__content--item:nth-child(1) p:nth-child(2){
+        left: 50%;
+        top: -15px;
+        transform: translateX(-50%);
+        text-wrap: nowrap;
+        font-size: 1rem;
+    }
+    .home__summer--camping__content:nth-child(2) .home__summer--camping__content--item:nth-child(2) ul li, 
+    .home__summer--camping__content:nth-child(1) .home__summer--camping__content--item:nth-child(1) ul li {
+        width: 100%;
+    }
+    .home__summer--programme__detail--item .home__summer--programme__detail--item__text p:nth-child(1){
+        font-size: .9rem;
+    }
+    .home__summer--programme__detail--item .home__summer--programme__detail--item__text p:nth-child(2) {
+        font-size: .7rem;
+    }
+    .home__summer--prize__start{
+        width: 90%;
+    }
+    .home__summer--prize{
+        border-radius: 0;
+    }
+    .home__summer--prize__start img:nth-child(1){
+        display: block;
+    }
+    .home__summer--prize__start img:nth-child(2){
+        display: none;
+    }
+    .home__summer--prize__start p{
+        width: 80%;
+        font-size: 1rem;
+    }
+    .home__summer--method__header{
+        width: auto;
+        margin: 10px;
+    }
+    .home__summer--method__header p{
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+    .home__summer--camping__container{
+        padding: 10px;
+    }
+    .home__summer--discover .home__summer--discover__container .home__summer--discover__box--content{
+        flex-wrap: wrap;
+    }
+    .home__summer--discover .home__summer--discover__container .home__summer--discover__box--content__item:nth-child(1),
+    .home__summer--discover .home__summer--discover__container .home__summer--discover__box--content__item:nth-child(2){
+        width: 100%;
+    }
+    .home__summer--discover .home__summer--discover__container .home__summer--discover__box--content__item{
+        padding: 10px;
+    }
+    .home__summer--discover.happy .home__summer--discover__container--header p{
+        display: flex;
+        gap: 5px;
+    }
+    .home__summer--discover.happy .home__summer--discover__container--header p span:nth-child(1),
+    .home__summer--discover.happy .home__summer--discover__container--header p span:nth-child(2){
+        font-size: .8rem;
+        text-wrap: nowrap;
+    }
+    .home__summer--menu__box--content{
+        flex-wrap: wrap;
+        background: var(--color-background-6) !important;
+    }
+    .home__summer--menu__box--content a:nth-child(2){
+        background: var(--color-background-29);
+    }
+    .home__summer--menu__box--content a{
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .home__summer--programme__container{
+        flex-wrap: wrap;
+    }
+    .home__summer--programme__content{
+        width: 100% !important;
+    }
+    .home__summer--form__container{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .home__summer--form__content{
+        width: 100% !important;
+    }
+    .home__summer--camping__content{
+        flex-wrap: wrap;
+    }
+    .home__summer--camping__content--item{
+        width: 100%;
+    }
+    .home__summer--digi__content:nth-child(1){
+        flex-wrap: wrap;
+    }
+    .home__summer--digi__content:nth-child(1) .home__summer--digi__item{
+        width: 100% !important;
+    }
+    .home__summer--digi__content:nth-child(2){
+        flex-wrap: wrap;
+        padding: 50px 0;
+        flex-direction: column;
+        gap: 10px ;
+    }
+    .home__summer--digi__content:nth-child(2) .home__summer--digi__item:nth-child(2) {
+        width: 100%;
+        padding: 10px;
+    }
+    .home__summer--programme .home__summer--programme__content {
+        padding: 10px;
+    }
+    .home__summer--digi__content:nth-child(2) .home__summer--digi__item{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .home__summer--digi__content:nth-child(2) .home__summer--digi__item:nth-child(2){
+        flex-wrap: wrap;
+    }
+    .home__summer--camping__content:nth-child(1) .home__summer--camping__content--item:nth-child(1) img ,
+    .home__summer--camping__content:nth-child(2) .home__summer--camping__content--item:nth-child(2) img {
+        position: absolute;
+        width: 80%;
+    }
+    .home__summer--digi__header--item:nth-child(1) img:nth-child(2){
+        display: none;
+    }
+    .home__summer--prize__container{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .home__summer--prize__content{
+        width: 100% !important;
+    }
+    .home__summer--programme__content--center{
+        display: none;
+    }
+    .home__summer--digi__header--item:nth-child(2) p {
+        font-size: 1rem;
+    }
+    .home__summer--method__item--img{
+        display: none;
+    }
+    .home__summer--method__item {
+        width: 100%;
+    }
+    .home__summer--digi__content:nth-child(2) .home__summer--digi__item:nth-child(1) img,
+    .home__summer--digi__content:nth-child(2) .home__summer--digi__item:nth-child(1){
+        width: 95%;
+    }
+
 }
