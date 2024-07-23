@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUS - Super Summer 2024</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon_192.png" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/checkout.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+</head>
+
+<body>
+    <header class="shadow">
+        <div class="navbar__mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="navbar__mobile--list">
+            <a href="#">Giỏ Hàng</a>
+            <a href="/templates/template-home-index.html">Trang chủ</a>
+            <a onclick="categoryBlog()">Danh Mục Bài Viết <ion-icon name="chevron-up-outline"></ion-icon><ion-icon
+                    name="chevron-down-outline"></ion-icon></a>
+            <div class="navbar__mobile--category__blog">
+                <a href="#">Danh mục bài viết 1</a>
+                <a href="#">Danh mục bài viết 1</a>
+                <a href="#">Danh mục bài viết 1</a>
+                <a href="#">Danh mục bài viết 1</a>
+            </div>
+
+            <a id="header__category--product" onclick="categoryProduct()">Danh Mục Sản Phẩm <ion-icon
+                    name="chevron-up-outline"></ion-icon><ion-icon name="chevron-down-outline"></ion-icon></a>
+            <div class="navbar__mobile--category__product">
+                <a href="#">Danh mục Sản Phẩm 1</a>
+                <a href="#">Danh mục Sản Phẩm 1</a>
+                <a href="#">Danh mục Sản Phẩm 1</a>
+                <a href="#">Danh mục Sản Phẩm 1</a>
+            </div>
+            <a href="#">Liên Hệ</a>
+        </div>
+        <div class="header__blur">
+
+        </div>
+        <div class="head__logo">
+            <img src="/assets/images/img1.svg" alt="img" />
+        </div>
+        <div class="head__navbar">
+            <a href="#">
+                <ion-icon name="home-outline"></ion-icon>
+                <span>trang chủ</span>
+            </a>
+            <a href="#">
+                <ion-icon name="call"></ion-icon>
+                <span>(028) 7308 3333</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="checkout">
+            <div class="checkout__container shadow">
+                <div class="checkout__container--form">
+                    <div class="checkout__container--form__header">
+                        <p>Thông tin nhận hàng</p>
+                    </div>
+                    <div class="checkout__container--form__list">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Họ và Tên" name="name" id='name' required />
+                            <label for="name" class="form__label">Họ và Tên</label>
+                          </div>
+                          <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Số Điện Thoại" name="phone" id='phone' required />
+                            <label for="phone" class="form__label">Số Điện Thoại</label>
+                          </div>
+                          <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Email" name="email" id='email' required />
+                            <label for="email" class="form__label">Email</label>
+                          </div>
+                          <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Địa Chỉ" name="address" id='address' required />
+                            <label for="address" class="form__label">Địa Chỉ</label>
+                          </div>
+                          <div class="form__group field">
+                            <textarea class="form__field"  name="note" id='note'>Ghi chú</textarea>
+                          </div>
+                    </div>
+                </div>
+                <div class="checkout__container--total">
+                    <div class="checkout__container--form__header">
+                        <p>Thông tin đơn hàng</p><ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="checkout__container--total__list">
+                        <div class="checkout__container--total__item">
+                            <p>Lorem Ipsum is simply dummy text<span> X 1</span></p><p>200000đ</p>
+                        </div>
+                        <div class="checkout__container--total__item">
+                            <p>Lorem Ipsum is simply dummy text<span> X 1</span></p><p>200000đ</p>
+                        </div>
+                    </div>
+                    <div class="checkout__container--total__price">
+                        <p>Tổng cộng: </p><p>400000đ</p>
+                    </div>
+                    <div class="checkout__container--total__btn">
+                        <button>Xác Nhận Đặt Hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/assets/js/header.js"></script>
+<script src="/assets/js/checkout.js"></script>
+</html>
