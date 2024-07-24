@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUS - Super Summer 2024</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon_192.png" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/blog.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+</head>
+
+<body>
+    <header class="shadow">
+        <div class="navbar__mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="navbar__mobile--list">
+            <a href="#">Giỏ Hàng</a>
+            <a href="/templates/template-home-index.html">Trang chủ</a>
+            <a onclick="categoryBlog()">Danh Mục Bài Viết <ion-icon name="chevron-up-outline"></ion-icon><ion-icon
+                    name="chevron-down-outline"></ion-icon></a>
+            <div class="navbar__mobile--category__blog">
+                <a href="#">Danh mục bài viết 1</a>
+                <a href="#">Danh mục bài viết 1</a>
+                <a href="#">Danh mục bài viết 1</a>
+                <a href="#">Danh mục bài viết 1</a>
+            </div>
+
+            <a id="header__category--product" onclick="categoryProduct()">Danh Mục Sản Phẩm <ion-icon
+                    name="chevron-up-outline"></ion-icon><ion-icon name="chevron-down-outline"></ion-icon></a>
+            <div class="navbar__mobile--category__product">
+                <a href="#">Danh mục Sản Phẩm 1</a>
+                <a href="#">Danh mục Sản Phẩm 1</a>
+                <a href="#">Danh mục Sản Phẩm 1</a>
+                <a href="#">Danh mục Sản Phẩm 1</a>
+            </div>
+            <a href="#">Liên Hệ</a>
+        </div>
+        <div class="header__blur">
+
+        </div>
+        <div class="head__logo">
+            <img src="/assets/images/img1.svg" alt="img" />
+        </div>
+        <div class="head__navbar">
+            <a href="#">
+                <ion-icon name="home-outline"></ion-icon>
+                <span>trang chủ</span>
+            </a>
+            <a href="#">
+                <ion-icon name="call"></ion-icon>
+                <span>(028) 7308 3333</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="blog__container">
+
+            <div class="blog__header">
+                <p>Bài Viết Mới Nhất</p><ion-icon name="options-outline"></ion-icon>
+            </div>
+            <div class="blog__content">
+                <div class="blog__content--main">
+                    <div class="blog__content--list">
+                        <div class="blog__content--list__item">
+                            <div class="blog__content--list__item-view">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <a href="#">
+                                <img src="https://picsum.photos/300" alt="img">
+                            </a>
+                            <div class="blog__content--list__item--text">
+                                <div class="blog__content--list__item--date">
+                                    <p>22/7/2024</p>
+                                </div>
+                                <a class="blog__content--list__item--title">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </a>
+                                <div class="blog__content--list__item--description">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                                <div class="blog__content--list__item--readmore">
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="blog__content--list__item--category">
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__content--list__item">
+                            <div class="blog__content--list__item-view">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <a href="#">
+                                <img src="https://picsum.photos/300" alt="img">
+                            </a>
+                            <div class="blog__content--list__item--text">
+                                <div class="blog__content--list__item--date">
+                                    <p>22/7/2024</p>
+                                </div>
+                                <a class="blog__content--list__item--title">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </a>
+                                <div class="blog__content--list__item--description">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                                <div class="blog__content--list__item--readmore">
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="blog__content--list__item--category">
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__content--list__item">
+                            <div class="blog__content--list__item-view">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <a href="#">
+                                <img src="https://picsum.photos/300" alt="img">
+                            </a>
+                            <div class="blog__content--list__item--text">
+                                <div class="blog__content--list__item--date">
+                                    <p>22/7/2024</p>
+                                </div>
+                                <a class="blog__content--list__item--title">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </a>
+                                <div class="blog__content--list__item--description">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                                <div class="blog__content--list__item--readmore">
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="blog__content--list__item--category">
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__content--list__item">
+                            <div class="blog__content--list__item-view">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <a href="#">
+                                <img src="https://picsum.photos/300" alt="img">
+                            </a>
+                            <div class="blog__content--list__item--text">
+                                <div class="blog__content--list__item--date">
+                                    <p>22/7/2024</p>
+                                </div>
+                                <a class="blog__content--list__item--title">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </a>
+                                <div class="blog__content--list__item--description">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                                <div class="blog__content--list__item--readmore">
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="blog__content--list__item--category">
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__content--list__item">
+                            <div class="blog__content--list__item-view">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <a href="#">
+                                <img src="https://picsum.photos/300" alt="img">
+                            </a>
+                            <div class="blog__content--list__item--text">
+                                <div class="blog__content--list__item--date">
+                                    <p>22/7/2024</p>
+                                </div>
+                                <a class="blog__content--list__item--title">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </a>
+                                <div class="blog__content--list__item--description">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                                <div class="blog__content--list__item--readmore">
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="blog__content--list__item--category">
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                    <p>Tài liệu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__content--pagination">
+                        <div class="blog__content--pagination__list">
+                            <div class="blog__content--pagination__item">
+                                <a href="#"><ion-icon name="caret-back-outline"></ion-icon></a>
+                            </div>
+                            <div class="blog__content--pagination__item">
+                                <a href="#">1</a>
+                            </div>
+                            <div class="blog__content--pagination__item">
+                                <a href="#">2</a>
+                            </div>
+                            <div class="blog__content--pagination__item">
+                                <a href="#"><ion-icon name="caret-forward-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__content--suggest">
+                    <div class="blog__content--contact">
+                        <p class="blog__content--contact_note">Lorem Ipsum is simply dummy text </p>
+                        <p class="blog__content--contact_text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. </p>
+                        <form class="blog__content--contact__form" action="#">
+                            <input type="text" placeholder="liên hệ với chúng tôi...">
+                            <button>Gửi Ngay!</button>
+                        </form>
+                    </div>
+                    <div class="blog__content--category">
+                        <div class="blog__content--category__header">
+                            <p>Danh Mục</p>
+                        </div>
+                        <div class="blog__content--category__container">
+                            <div class="blog__content--category__list">
+                                <p><a href="#"><ion-icon name="link-outline"></ion-icon>Name Category 1</a></p>
+                                <ul>
+                                    <li><a href="#">Name Category 1.1</a></li>
+                                    <li><a href="#">Name Category 1.2</a></li>
+                                    <li><a href="#">Name Category 1.3</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog__content--category__list">
+                                <p><a href="#"><ion-icon name="link-outline"></ion-icon>Name Category 2</a></p>
+                                <ul>
+                                    <li><a href="#">Name Category 2.1</a></li>
+                                    <li><a href="#">Name Category 2.2</a></li>
+                                    <li><a href="#">Name Category 2.3</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog__content--category__list">
+                                <p><a href="#"><ion-icon name="link-outline"></ion-icon>Name Category 3</a></p>
+                                <ul>
+                                    <li><a href="#">Name Category 3.1</a></li>
+                                    <li><a href="#">Name Category 3.2</a></li>
+                                    <li><a href="#">Name Category 3.3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__content--category">
+                        <div class="blog__content--category__header">
+                            <p>Danh Mục Bài Viết</p><ion-icon name="close-outline"></ion-icon>
+                        </div>
+                        <div class="blog__content--category__container">
+                            <div class="blog__content--category__list">
+                                <p><a href="#"><ion-icon name="link-outline"></ion-icon>Name Category 1</a></p>
+                                <ul>
+                                    <li><a href="#">Name Category 1.1</a></li>
+                                    <li><a href="#">Name Category 1.2</a></li>
+                                    <li><a href="#">Name Category 1.3</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog__content--category__list">
+                                <p><a href="#"><ion-icon name="link-outline"></ion-icon>Name Category 2</a></p>
+                                <ul>
+                                    <li><a href="#">Name Category 2.1</a></li>
+                                    <li><a href="#">Name Category 2.2</a></li>
+                                    <li><a href="#">Name Category 2.3</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog__content--category__list">
+                                <p><a href="#"><ion-icon name="link-outline"></ion-icon>Name Category 3</a></p>
+                                <ul>
+                                    <li><a href="#">Name Category 3.1</a></li>
+                                    <li><a href="#">Name Category 3.2</a></li>
+                                    <li><a href="#">Name Category 3.3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__content--recomend">
+                        <div class="blog__content--recomend__header">
+                            <p>Bài Viết Đáng Xem</p>
+                        </div>
+                        <div class="blog__content--recomend__list">
+                            <a class="blog__content--recomend--item">
+                                <img src="https://picsum.photos/200" alt="img">
+                                <div class="blog__content--recomend--item__text">
+                                    <p class="blog__content--recomend--item__category">category</p>
+                                    <p class="blog__content--recomend--item__description">Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting industry. </p>
+                                </div>
+                            </a>
+                            <a class="blog__content--recomend--item">
+                                <img src="https://picsum.photos/200" alt="img">
+                                <div class="blog__content--recomend--item__text">
+                                    <p class="blog__content--recomend--item__category">category</p>
+                                    <p class="blog__content--recomend--item__description">Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting industry. </p>
+                                </div>
+                            </a>
+                            <a class="blog__content--recomend--item">
+                                <img src="https://picsum.photos/200" alt="img">
+                                <div class="blog__content--recomend--item__text">
+                                    <p class="blog__content--recomend--item__category">category</p>
+                                    <p class="blog__content--recomend--item__description">Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting industry. </p>
+                                </div>
+                            </a>
+                            <a class="blog__content--recomend--item">
+                                <img src="https://picsum.photos/200" alt="img">
+                                <div class="blog__content--recomend--item__text">
+                                    <p class="blog__content--recomend--item__category">category</p>
+                                    <p class="blog__content--recomend--item__description">Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting industry. </p>
+                                </div>
+                            </a>
+                            <a class="blog__content--recomend--item">
+                                <img src="https://picsum.photos/200" alt="img">
+                                <div class="blog__content--recomend--item__text">
+                                    <p class="blog__content--recomend--item__category">category</p>
+                                    <p class="blog__content--recomend--item__description">Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting industry. </p>
+                                </div>
+                            </a>
+                            <a class="blog__content--recomend--item">
+                                <img src="https://picsum.photos/200" alt="img">
+                                <div class="blog__content--recomend--item__text">
+                                    <p class="blog__content--recomend--item__category">category</p>
+                                    <p class="blog__content--recomend--item__description">Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting industry. </p>
+                                </div>
+                            </a>
+                            <a class="blog__content--recomend--item">
+                                <img src="https://picsum.photos/200" alt="img">
+                                <div class="blog__content--recomend--item__text">
+                                    <p class="blog__content--recomend--item__category">category</p>
+                                    <p class="blog__content--recomend--item__description">Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting industry. </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/assets/js/header.js"></script>
+<script src="/assets/js/blog.js"></script>
+</html>
