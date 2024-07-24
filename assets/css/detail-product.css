@@ -14,20 +14,36 @@
     width: 100%;
     text-align: center;
 }
-
 .detail__product--navbar__product {
-    display: grid;
-    column-gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 20px;
-
+   display: flex;
+   width: 100%;
+    gap: 10px; /* Thêm khoảng cách giữa các cột nếu cần */
+}
+.detail__product--navbar__filter{
+    
 }
 
+.detail__product--navbar__product--filter{
+    position: sticky;
+    top: 100px;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.detail__product--navbar__product--items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, .333333fr));
+    gap: 15px;
+}
+.detail__product--navbar__items ,.detail__product--navbar__product--filter{
+    border-radius: 13px;
+}
 .detail__product--navbar__items {
     background-color: rgb(156, 156, 156);
-    gap: 10px;
+    gap: 20px;
     max-height: 385px;
-    border-radius: 13px;
     display:inherit;
 }
 
