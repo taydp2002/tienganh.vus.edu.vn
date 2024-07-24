@@ -2,47 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta type="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chi tiết sản phẩm</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon_192.png" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/detail-blog.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail product</title>
+    <link rel="stylesheet" href="../assets/css/blog.css" />
     <link rel="stylesheet" href="../assets/css/header.css" />
-    <link rel="stylesheet" href="../assets/css/detail-product.css">
+    <link rel="stylesheet" href="../assets/css/product_items.css">
 </head>
 
 <body>
     <header class="shadow">
         <div class="navbar__mobile">
-            <ion-icon type="menu-outline"></ion-icon>
+            <ion-icon name="menu-outline"></ion-icon>
         </div>
         <div class="navbar__mobile--list">
             <a href="#">Giỏ Hàng</a>
             <a href="/templates/template-home-index.html">Trang chủ</a>
-            <a onclick="categoryBlog()">Danh Mục Bài Viết <ion-icon type="chevron-up-outline"></ion-icon><ion-icon
-                    type="chevron-down-outline"></ion-icon></a>
+            <a onclick="categoryBlog()">Danh Mục Bài Viết <ion-icon name="chevron-up-outline"></ion-icon><ion-icon
+                    name="chevron-down-outline"></ion-icon></a>
             <div class="navbar__mobile--category__blog">
                 <a href="#">Danh mục bài viết 1</a>
                 <a href="#">Danh mục bài viết 1</a>
                 <a href="#">Danh mục bài viết 1</a>
                 <a href="#">Danh mục bài viết 1</a>
             </div>
+
             <a id="header__category--product" onclick="categoryProduct()">Danh Mục Sản Phẩm <ion-icon
-                    type="chevron-up-outline"></ion-icon><ion-icon type="chevron-down-outline"></ion-icon></a>
+                    name="chevron-up-outline"></ion-icon><ion-icon name="chevron-down-outline"></ion-icon></a>
             <div class="navbar__mobile--category__product">
                 <a href="#">Danh mục Sản Phẩm 1</a>
                 <a href="#">Danh mục Sản Phẩm 1</a>
@@ -59,386 +45,68 @@
         </div>
         <div class="head__navbar">
             <a href="#">
-                <ion-icon type="home-outline"></ion-icon>
+                <ion-icon name="home-outline"></ion-icon>
                 <span>trang chủ</span>
             </a>
             <a href="#">
-                <ion-icon type="call"></ion-icon>
+                <ion-icon name="call"></ion-icon>
                 <span>(028) 7308 3333</span>
             </a>
         </div>
     </header>
-
-
-    <main>
+    <main class="detail__product--main">
         <div class="detail__product--container">
+            <div class="detail__product--navbar">
+                <div class="detail__product--navbar__categori">
+                    <img src="../assets/images/detail_product.png" alt="" srcset="">
+                    <div class="detail__product--navbar__searchbox">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm . . .">
+                        <span class="detail__product--navbar__searchbox--btn">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </span>
+                    </div>
+                    <div class="detail__product--navbar__func">
+                        <div class="detail__product--navbar__func--link">
+                            <div><ion-icon name="alarm-outline"></ion-icon></div>
+                            <div class="detail__product--navbar__func--link__name">
+                                    Thông báo
+                            </div>
+                        </div>
+                        <div class="detail__product--navbar__func--link">
+                            <div><ion-icon name="cart-outline"></ion-icon></div>
+                            <div class="detail__product--navbar__func--link__name">
+                                Giỏ hàng
+                            </div>
+                        </div>
+                        <div class="detail__product--navbar__func--link">
+                            <div><ion-icon name="person-circle-outline"></ion-icon></div>
+                            <div class="detail__product--navbar__func--link__name">
+                                Name User 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="detail__product--box">
-                <div class="detail__product--navbar">
-                    <div class="detail__product--navbar__filter">
-                        Lọc theo
-                    </div>
-                    <div class="detail__product--navbar__sorted">
-                        Sản phẩm gợi ý
+                <div class="detail__product--media">
+                    <div class="detail__product--media__slide">
+                        <div class="detail__product--media__slide--imgs">
+                            <img src="../assets/images/home_30.png" alt="" srcset="">
+                        </div>
+                        <div class="detail__product--media__slide--items">
+                            
+                        </div>
                     </div>
                 </div>
-                <div class="detail__product--navbar__title">
-                    Tổng số 21 sản phẩm
-                </div>
-                <div class="detail__product--navbar__product">
-
-                    <div class="detail__product--navbar__product--filter">
-                        <div class="detail__product--navbar__product--filter__title">
-                            Lorem Ipsum is simply dummy t
-                        </div>
-                        <div class="detail__product--navbar__product--filter__desc">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </div>
-                        <input class="detail__product--navbar__product--filter__input" type="text" placeholder="Nhập từ khóa để tìm kiếm . . .">
-                        <button class="detail__product--navbar__product--filter__btn">
-                            Tìm kiếm
-                        </button>
-                        <div class="detail__product--navbar__product--filter__sorted">
-                            <div class="detail__product--navbar__product--filter__tags">
-                                <div class="detail__product--tags__list">
-                                    <p><a href="#"><ion-icon name="link-outline"></ion-icon>Name Category 2</a></p>
-                                    <ul>
-                                        <li><a href="#">Name Category 2.1</a></li>
-                                        <li><a href="#">Name Category 2.2</a></li>
-                                        <li><a href="#">Name Category 2.3</a></li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detail__product--navbar__product--items">
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div style="margin-top: 5px;">
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                        <a class="detail__product--navbar__items">
-                            <!-- img -->
-                            <div class="detail__product--navbar__items--image">
-                                <img src="https://picsum.photos/300" alt="">
-                            </div>
-                            <!-- rating --> 
-                             <div class="detail__product--rating">
-                                 *************************
-                             </div>
-                            
-                            <!-- type/ desc -->
-                            <div class="detail__product--navbar__product--inf">
-                                <div class="detail__product--navbar__product--type">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel obcaecati cum
-                                    sequi praesentium aspernatur temporibus cupiditate ipsum quia amet?
-                                </div>
-                                <div class="detail__product--navbar__product--desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quibusdam obcaecati
-                                    velit minima, nihil sequi quaerat dolores rem amet impedit ipsa similique nulla
-                                    recusandae molestiae hic dolorem nemo beatae sed mollitia debitis reprehenderit?
-                                    Enim aspernatur ut deleniti vero incidunt veniam voluptatum, minima iusto omnis quod
-                                    ullam sapiente et quos tempora.
-                                </div>
-                                <!-- price -->
-                                <div>
-                                    20.000đ
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="detail__product--detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio natus sint aperiam delectus libero, atque corporis dolor ut eos blanditiis, voluptatum quis rem, dolorem similique pariatur! Illum nulla ducimus corporis, accusamus consequatur nostrum eaque perferendis vel! Quidem, repudiandae aut.
 
                 </div>
             </div>
         </div>
-        </div>
     </main>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
