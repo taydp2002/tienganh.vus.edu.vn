@@ -1,39 +1,44 @@
-.detail__product--main{
+.detail__product--main {
     padding-bottom: 30px;
     position: relative;
     background: var(--color-background-12);
 }
-.detail__product--container{
+
+.detail__product--container {
     background: var(--color-background-12);
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-.detail__product--navbar{
+
+.detail__product--navbar {
     position: absolute;
     left: 0;
     height: 60px;
     width: 100%;
     background-color: white;
 }
-.detail__product--navbar__categori{
+
+.detail__product--navbar__categori {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     height: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     justify-content: space-evenly;
 }
-.detail__product--navbar__categori img{
+
+.detail__product--navbar__categori img {
     height: 25px;
 }
 
-.detail__product--box{
+.detail__product--box {
     margin-top: 60px;
 }
-.detail__product--navbar__categori input{
+
+.detail__product--navbar__categori input {
     height: 40px;
     padding: 0 80px 0 24px;
     border: 1px solid #CDCFD0;
@@ -42,14 +47,13 @@
     width: 100%;
 }
 
-.detail__product--navbar__searchbox
-{
+.detail__product--navbar__searchbox {
     margin-left: 10px;
     position: relative;
     width: 50%;
 }
 
-.detail__product--navbar__searchbox--btn{
+.detail__product--navbar__searchbox--btn {
     display: flex;
     align-items: center;
     position: absolute;
@@ -68,76 +72,167 @@
     justify-content: center;
     color: white;
 }
-.detail__product--navbar__searchbox--btn ion-icon{
+
+.detail__product--navbar__searchbox--btn ion-icon {
     font-size: 20px;
     font-weight: bolder;
 }
 
 
 /* ======================================== */
-.detail__product--navbar__func{
+.detail__product--navbar__func {
     display: flex;
     margin-left: 64px;
     gap: 10px;
 }
-.detail__product--navbar__func--link{
+
+.detail__product--navbar__func--link {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.detail__product--navbar__func--link ion-icon{
+
+.detail__product--navbar__func--link ion-icon {
     font-size: xx-large;
 }
-.detail__product--navbar__func--link__name{
+
+.detail__product--navbar__func--link__name {
     line-height: 18px;
     color: #000000;
     font-size: 12px;
     font-weight: 500;
 }
+
 /* ================================================================ */
-.detail__product--box{
+.detail__product--box {
     margin-top: 100px;
     width: 100%;
     display: flex;
+    gap: 12px;
     justify-content: space-between;
 }
-.detail__product--media{
-    padding: 10px;
-    width: 30%;
-}
-.detail__product--media__slide{
- 
-}
-.detail__product--media__slide--imgs{
-    width: 100%;
-}
-.detail__product--media__slide--imgs img{
-    width: 100%;
-    height: calc(100vh - 128px - 33px - 32px - 160px);
+
+
+.detail__product--media {
+    width: 40%;
     max-width: 500px;
-    max-height: 500px;
-    object-fit: contain;
 }
-.detail__product--media__slide--items{
-    margin-top: 16px;
+
+.detail__product--media__slide {
+    max-height: 800px;
+    position: sticky;
+    top: 16px;
+    background: white;
+    border-radius: 8px;
 }
-.detail__product--media__slide--items img{
-    transition: transform 0.15s ease 0s;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    max-height: 100%;
+
+.detail__product--media__slide--imgs {
+    width: 450px;
+    height: 450px;
+}
+
+.detail__product--media__slide--imgs img {
+    width: auto;
     max-width: 100%;
 }
-.detail__product--detail{
-    width: 60%;
 
+.detail__product--media__slide--thumbnail {
+    margin-top: 12px;
+    max-height: 84px;
+    max-width: 450px;
+    display: flex;
+    overflow: hidden;
+    gap: 8px;
+}
+
+.detail__media--list {
+    padding: 0 10px;
+    display: flex;
+}
+
+.detail__product--media__slide--items {
+    width: 84px;
+}
+
+.detail__product--media__slide--items img {
+    width: 100%;
 }
 
 .detail__product--media,
-.detail__product--detail{
+.detail__product--detail {
     border-radius: 16px;
     background-color: white;
+    padding: 15px;
+}
+
+.detail__product--detail {
+    width: 70%;
 }
 
 
+.detail__product--view__addbox {
+    width: 100%;
+    display: flex;
+    padding: 16px 0;
+    gap: 10px;
+}
+
+.detail__product--addBtn {
+    width: 50%;
+    cursor: pointer;
+    user-select: none;
+    height: 44px;
+    margin-left: 10px;
+    width: 220px;
+    font-weight: 700;
+    font-size: 1.1em;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #C92127;
+    border: none;
+}
+
+.detail__whitebtn {}
+
+.detail__redbtn {}
+
+.detail__product--title{
+    line-height: 1.5em;
+    overflow-wrap: break-word;
+    padding-bottom: 16px;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.detail__product--rating{
+    color: rgb(255, 210, 85);
+}
+.detail__product--price{
+display:flex;
+gap: 8px;
+}
+.detail__product--price__buy{
+    color: red;
+}
+.detail__product--price__sale{
+text-decoration: line-through;
+color: black;
+}
+.detail__product--rate__sale{
+    background-color:#C92127;
+    color: white;
+}
+
+.detail__product--inf{
+    margin: 10px 0;
+}
+.detail__product--describe{
+    
+}
